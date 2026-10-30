@@ -1,0 +1,50 @@
+.chartCard {
+  background: #151426;
+  border: 1px solid #29263f;
+  border-radius: 16px;
+  padding: 22px;
+  min-width: 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading h3,
+.historyCard h3 {
+  font-size: 17px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.heading p {
+  font-size: 11px;
+  color: #9893aa;
+}
+
+.heading span {
+  color: #c4b5fd;
+  background: #30204e;
+  padding: 7px 10px;
+  border-radius: 8px;
+  font-size: 10px;
+}
+
+.chart {
+  width: 100%;
+  height: 260px;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .chartCard {
+    padding: 15px;
+  }
+
+  .chart {
+    height: 220px;
+  }
+}

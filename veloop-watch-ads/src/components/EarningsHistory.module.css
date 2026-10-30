@@ -1,0 +1,92 @@
+.historyCard {
+  background: #151426;
+  border: 1px solid #29263f;
+  border-radius: 16px;
+  padding: 22px;
+  min-width: 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.heading h3 {
+  font-size: 17px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.heading p {
+  color: #9893aa;
+  font-size: 11px;
+}
+
+.heading > span {
+  color: #c4b5fd;
+  font-size: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #29263f;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  background: #30204e;
+  color: #fbbf24;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.info h4 {
+  font-size: 13px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.info p {
+  font-size: 10px;
+  color: #9893aa;
+}
+
+.item > strong {
+  color: #4ade80;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.empty {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #9893aa;
+  gap: 12px;
+  font-size: 12px;
+}

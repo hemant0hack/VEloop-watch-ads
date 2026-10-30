@@ -1,0 +1,155 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111020;
+  color: #ffffff;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  border-right: 1px solid #27243c;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px 35px;
+}
+
+.logo h3 {
+  color: #a78bfa;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #aaa5bd;
+}
+
+.menuLabel {
+  font-size: 11px;
+  color: #77728e;
+  padding-left: 12px;
+  margin-bottom: 12px;
+  letter-spacing: 1.5px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 12px;
+  border-radius: 10px;
+  color: #aaa6bc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.menuItem:hover {
+  background: #25213d;
+  color: #ffffff;
+}
+
+.active {
+  background: #35265b;
+  color: #c4b5fd;
+  border: 1px solid #514080;
+}
+
+.upgrade {
+  margin-top: auto;
+  padding: 18px 14px;
+  background: #211b38;
+  border: 1px solid #42345f;
+  border-radius: 13px;
+}
+
+.upgrade svg {
+  color: #fbbf24;
+}
+
+.upgrade h4 {
+  font-size: 15px;
+  margin: 12px 0 5px;
+}
+
+.upgrade p {
+  color: #aaa5bd;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.upgrade button {
+  width: 100%;
+  background: #7950e8;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.upgrade button:hover {
+  background: #906ef0;
+}
+
+.footer {
+  text-align: center;
+  color: #77728e;
+  font-size: 10px;
+  margin-top: 20px;
+}
+
+.closeBtn {
+  display: none;
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .closeBtn {
+    display: block;
+  }
+
+  .overlay.show {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+  }
+}

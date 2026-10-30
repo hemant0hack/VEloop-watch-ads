@@ -1,0 +1,45 @@
+.container {
+  background: #151426;
+  border: 1px solid #29263f;
+  border-radius: 18px;
+  padding: 55px 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.icon {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #30204e;
+  color: #a78bfa;
+}
+
+.container h2 {
+  color: white;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: #aaa5bd;
+  font-size: 12px;
+  max-width: 380px;
+  margin: 0 auto 20px;
+  line-height: 1.7;
+}
+
+.container button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 18px;
+  background: #7954cf;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  cursor: pointer;
+}

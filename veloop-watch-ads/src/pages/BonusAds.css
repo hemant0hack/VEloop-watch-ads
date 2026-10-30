@@ -1,0 +1,50 @@
+.bonus-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 8px 14px;
+  border: 1px solid #aaa5bd;
+  border-radius: 6px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.bonus-page {
+  min-height: 420px;
+  padding: 50px 20px;
+  background: #171625;
+  border: 1px solid #302d43;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bonus-page h1 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.bonus-page p {
+  color: #aaa7bb;
+  max-width: 500px;
+}
+
+.bonus-reward {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  background: #29243d;
+  color: #f5b942;
+  font-weight: 600;
+}
+
+.bonus-empty {
+  margin-top: 16px;
+}

@@ -1,0 +1,241 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(5, 4, 15, 0.85);
+  backdrop-filter: blur(8px);
+  display: grid;
+  place-items: center;
+  padding: 15px;
+}
+
+.modal {
+  width: 100%;
+  max-width: 480px;
+  background: #171528;
+  border: 1px solid #443568;
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  box-shadow: 0 25px 80px #00000070;
+  animation: modalEnter 0.3s ease;
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.header small {
+  color: #a78bfa;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.header h2 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.header button {
+  background: #29243d;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.player {
+  min-height: 220px;
+  background: radial-gradient(circle, #49317b, transparent 70%), #211b35;
+  border: 1px solid #443568;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.playIcon {
+  width: 75px;
+  height: 75px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #8155db;
+  color: white;
+}
+
+.player h3 {
+  font-size: 16px;
+}
+
+.player p {
+  color: #aaa5bd;
+  font-size: 11px;
+}
+
+.successContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  animation: successEnter 0.5s ease;
+}
+
+.successIcon {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #164b35;
+  color: #4ade80;
+  animation: successPulse 1.5s infinite;
+}
+
+.rewardCelebration {
+  color: #fbbf24;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+@keyframes successEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes successPulse {
+  50% {
+    box-shadow: 0 0 25px #4ade8060;
+  }
+}
+
+.timerSection {
+  margin-top: 25px;
+}
+
+.timerText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.timerText span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #aaa5bd;
+  font-size: 12px;
+}
+
+.timerText strong {
+  color: #c4b5fd;
+  font-size: 16px;
+}
+
+.progressTrack {
+  width: 100%;
+  height: 8px;
+  background: #343047;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #8256dc, #c4a7ff);
+  border-radius: 20px;
+  transition: width 0.3s linear;
+}
+
+.rewardBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #29213d;
+  border: 1px solid #4c3a68;
+  border-radius: 12px;
+  padding: 14px;
+  margin: 20px 0;
+  color: #fbbf24;
+}
+
+.rewardBox small {
+  color: #aaa5bd;
+  font-size: 11px;
+}
+
+.rewardBox h3 {
+  color: #fbbf24;
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.startButton,
+.completeButton {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #8054df;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.startButton:disabled {
+  background: #42345e;
+  cursor: not-allowed;
+}
+
+.completeButton {
+  background: #166534;
+}
+
+.disclaimer {
+  text-align: center;
+  font-size: 10px;
+  color: #858096;
+  margin-top: 15px;
+}
+
+@media (max-width: 450px) {
+  .modal {
+    padding: 18px;
+  }
+
+  .player {
+    min-height: 190px;
+  }
+}

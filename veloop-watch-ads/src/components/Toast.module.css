@@ -1,0 +1,36 @@
+.toast {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 20px;
+  background: #163b2d;
+  color: #7cf0b0;
+  border: 1px solid #267b54;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px #0005;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 550px) {
+  .toast {
+    top: 15px;
+    right: 15px;
+    left: 15px;
+  }
+}
