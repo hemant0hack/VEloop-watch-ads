@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Analytics } from '@vercel/analytics/react';
 
 import AppProvider from "./context/AppContext";
 import Dashboard from "./pages/Dashboard";
@@ -14,6 +15,7 @@ function App() {
           <Route path="*" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </AppProvider>
   );
 }
